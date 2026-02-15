@@ -1,0 +1,27 @@
+/* Make body text slightly larger */
+body {
+  font-size: 18px;
+}
+
+/* Make main title bigger */
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Make section headings larger */
+h2 {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+/* Increase line spacing */
+p {
+  line-height: 1.7;
+}
+
+/* Make profile image bigger */
+img {
+  width: 220px;
+  border-radius: 50%;
+}
