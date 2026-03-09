@@ -1,74 +1,510 @@
-/* ======= PROTECT NAVBAR FROM CUSTOM STYLES ======= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* NAVBAR */
 .navbar {
   display: flex !important;
   flex-direction: row !important;
   background-color: #1a2f23 !important;
   padding: 10px 20px !important;
+  position: relative;
+  z-index: 999 !important;
 }
-
 .navbar-nav {
   display: flex !important;
   flex-direction: row !important;
   list-style: none !important;
   gap: 20px !important;
 }
+.navbar-nav .nav-link { color: #6ee7b7 !important; font-weight: bold !important; }
+.navbar-nav .nav-link:hover { color: #a7f3d0 !important; }
+.navbar-brand { color: #ffffff !important; font-weight: bold !important; margin-right: 30px !important; }
 
-.navbar-nav .nav-link {
-  color: #6ee7b7 !important;
-  font-weight: bold !important;
+/* GLOBAL */
+body { font-family: 'Inter', sans-serif; color: #eaf4ed; margin: 0; padding: 0; }
+a { color: #6ee7b7; text-decoration: none; }
+a:hover { color: #a7f3d0; }
+
+/* HERO WRAPPER - Full background image */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #a7f3d0 !important;
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 15, 10, 0.30);
+  z-index: 0;
 }
 
-.navbar-brand {
-  color: #ffffff !important;
-  font-weight: bold !important;
-  margin-right: 30px !important;
+/* Content pushed to right */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 60px 60px 60px 40px;
 }
 
-/* ======= GLOBAL STYLES ======= */
-body {
+/* Glass card */
+.hero-card {
+  width: 440px;
+  padding: 32px 28px;
+  border-radius: 16px;
+  background: rgba(10, 30, 20, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(110, 231, 183, 0.40);
   color: #eaf4ed;
-  font-family: 'Segoe UI', sans-serif;
 }
 
-a {
-  color: #6ee7b7;
+.hero-card h1 { margin-top: 0; font-size: 2rem; color: #ffffff; }
+.hero-card h4 { color: #a7f3d0; font-size: 0.92rem; margin-bottom: 14px; }
+.hero-card p  { font-size: 0.93rem; line-height: 1.75; color: #d1fae5; }
+.hero-card hr { border-color: rgba(110,231,183,0.4); margin: 14px 0; }
+
+/* Buttons */
+.btn-green {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  background: #6ee7b7;
+  color: #0f1f17 !important;
   text-decoration: none;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+.btn-green:hover { background: #a7f3d0; }
+
+.btn-border {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: 2px solid #6ee7b7;
+  color: #6ee7b7 !important;
+  text-decoration: none;
+  background: transparent;
+  margin-top: 16px;
+}
+.btn-border:hover { background: #6ee7b7; color: #0f1f17 !important; }
+
+/* ================================================
+   RESUME PAGE
+================================================ */
+.page-resume {
+  background-color: #0a1628;
 }
 
-a:hover {
-  color: #a7f3d0;
-}
-
-/* ======= HOME PAGE - Misty Pine Forest ======= */
-.page-home {
-  background: linear-gradient(rgba(26, 47, 35, 0.85), rgba(26, 47, 35, 0.85)),
-    url('forest-bg.jpg');
+.resume-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("resume-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* ======= RESUME PAGE ======= */
-.page-resume {
-  background-color: #1a2f23;
+/* Dark navy overlay */
+.resume-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 12, 30, 0.82);
+  z-index: 0;
 }
 
-/* ======= PROJECTS PAGE ======= */
+/* Outer content container */
+.resume-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Individual glass cards - same style as home page */
+.resume-card {
+  padding: 30px 28px;
+  border-radius: 16px;
+  background: rgba(10, 22, 40, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(74, 222, 128, 0.30);
+  color: #e2f0fb;
+}
+
+/* Section headings inside cards */
+.resume-card h2 {
+  color: #4ade80;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(74, 222, 128, 0.25);
+  font-size: 1.3rem;
+}
+
+/* Job titles */
+.resume-card h3 {
+  color: #ffffff;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+/* Body text */
+.resume-card p,
+.resume-card li {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Bold text */
+.resume-card strong {
+  color: #ffffff;
+}
+
+/* Italic company/date text */
+.resume-card em {
+  color: #a7f3d0;
+}
+
+/* Download button */
+.resume-card .btn-green {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  background: #4ade80;
+  color: #0a1628 !important;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.resume-card .btn-green:hover {
+  background: #86efac;
+}
+
+
+/* ================================================
+   PROJECTS PAGE - Business Analyst Illustration
+================================================ */
 .page-projects {
-  background-color: #132a2a;
+  background-color: #0d1b2a;
 }
 
-/* ======= SKILLS PAGE ======= */
+.projects-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("projects-bg.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/* Dark blue overlay - image is very bright so needs strong overlay */
+.projects-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 20, 40, 0.84);
+  z-index: 0;
+}
+
+/* Outer content container */
+.projects-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Glass cards - same style as resume and home */
+.projects-card {
+  padding: 30px 28px;
+  border-radius: 16px;
+  background: rgba(8, 20, 40, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  color: #e2f0fb;
+}
+
+/* Main heading */
+.projects-card h2 {
+  color: #60a5fa;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(96, 165, 250, 0.25);
+  font-size: 1.3rem;
+}
+
+/* Project titles */
+.projects-card h3 {
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+/* Body text and bullets */
+.projects-card p,
+.projects-card li {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Bold labels like "The Challenge:" */
+.projects-card strong {
+  color: #93c5fd;
+}
+
+/* Italic text */
+.projects-card em {
+  color: #bfdbfe;
+}
+
+/* ================================================
+   SKILLS PAGE - Colorful Lightbulb Word Cloud
+================================================ */
 .page-skills {
-  background-color: #0f1f17;
+  background-color: #1a0a2e;
 }
 
-/* ======= CONTACT PAGE ======= */
+.skills-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("skills-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Strong dark overlay — image is very bright */
+.skills-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 5, 30, 0.86);
+  z-index: 0;
+}
+
+/* Outer content container */
+.skills-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Glass cards */
+.skills-card {
+  padding: 30px 28px;
+  border-radius: 16px;
+  background: rgba(20, 5, 40, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  color: #f1f5f9;
+}
+
+/* Section headings */
+.skills-card h2 {
+  color: #f87171;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(248, 113, 113, 0.25);
+  font-size: 1.3rem;
+}
+
+/* Table headings */
+.skills-card th {
+  color: #fca5a5;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(248, 113, 113, 0.25);
+  padding: 8px 12px;
+}
+
+/* Table cells */
+.skills-card td {
+  color: #e2e8f0;
+  padding: 8px 12px;
+  font-size: 0.93rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+/* Body text */
+.skills-card p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Table rows hover */
+.skills-card tr:hover td {
+  background: rgba(248, 113, 113, 0.08);
+}
+
+/* ================================================
+   CONTACT PAGE - Dark Purple/Blue Background
+================================================ */
 .page-contact {
-  background: linear-gradient(135deg, #1a2f23 0%, #0d3320 50%, #1a2f23 100%);
+  background-color: #0d0a1e;
+}
+
+.contact-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("contact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Light overlay — image is already dark */
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 5, 25, 0.60);
+  z-index: 0;
+}
+
+/* Outer content container */
+.contact-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Glass cards */
+.contact-card {
+  padding: 30px 28px;
+  border-radius: 16px;
+  background: rgba(15, 8, 35, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(167, 139, 250, 0.40);
+  color: #f1f5f9;
+}
+
+/* Section headings */
+.contact-card h2 {
+  color: #c4b5fd;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.25);
+  font-size: 1.3rem;
+}
+
+/* Body text */
+.contact-card p,
+.contact-card li {
+  color: #e2e8f0;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.contact-card strong { color: #ffffff; }
+.contact-card hr { border-color: rgba(167, 139, 250, 0.25); margin: 14px 0; }
+.contact-card a { color: #a78bfa; }
+.contact-card a:hover { color: #c4b5fd; }
+
+/* ---- CONTACT FORM STYLES ---- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Two columns side by side for First/Last name */
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  color: #c4b5fd;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* Input and textarea styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(167, 139, 250, 0.40);
+  background: rgba(255, 255, 255, 0.06);
+  color: #f1f5f9;
+  font-size: 0.93rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a78bfa;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(200, 200, 220, 0.45);
+}
+
+/* Send button — matches the green send button in your screenshot */
+.btn-send {
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  background: #1a5c3a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s;
+}
+
+.btn-send:hover {
+  background: #22c55e;
+  color: #0a1628;
 }
 
