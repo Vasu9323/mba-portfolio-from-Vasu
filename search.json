@@ -35,11 +35,88 @@
     "text": "🌐 Languages\n\n\n\nLanguage\nLevel\n\n\n\n\nEnglish\n🟢 Professional\n\n\nHindi\n🟢 Fluent\n\n\nGujarati\n🟢 Native"
   },
   {
-    "objectID": "projects.html#projects-case-studies",
-    "href": "projects.html#projects-case-studies",
+    "objectID": "reflection.html",
+    "href": "reflection.html",
     "title": "Vasu Ramoliya - MBA Portfolio",
-    "section": "📊 Projects & Case Studies",
-    "text": "📊 Projects & Case Studies\nWelcome to my portfolio of academic projects. Each project below demonstrates how I apply data-driven analysis and structured management frameworks to solve real business problems."
+    "section": "",
+    "text": "Building a multi-page MBA portfolio website from scratch was a technical and a creative challenge. Throughout this assignment, I used a Large Language Model (LLM) as my main collaborative tool - not only to generate text for this assignment, but also to help me to solve actual coding problems, to design visual layouts, and to iteratively design my professional presentation in real time (Perplexity AI, 2026)."
+  },
+  {
+    "objectID": "reflection.html#reflection-changing-use-of-llms-in-the-creation-of-my-mba-portfolio-website",
+    "href": "reflection.html#reflection-changing-use-of-llms-in-the-creation-of-my-mba-portfolio-website",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "",
+    "text": "Building a multi-page MBA portfolio website from scratch was a technical and a creative challenge. Throughout this assignment, I used a Large Language Model (LLM) as my main collaborative tool - not only to generate text for this assignment, but also to help me to solve actual coding problems, to design visual layouts, and to iteratively design my professional presentation in real time (Perplexity AI, 2026)."
+  },
+  {
+    "objectID": "reflection.html#starting-point-and-initial-use-of-the-llm",
+    "href": "reflection.html#starting-point-and-initial-use-of-the-llm",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "Starting Point and Initial Use of the LLM",
+    "text": "Starting Point and Initial Use of the LLM\nI started out by uploading an existing single page portfolio PDF into the LLM and made it analyse my content before creating anything new. This grounding step was important for a very important reason. Rather than taking a one-size-fits-all template of the MBA portfolio, I asked the LLM to use my real resume data - my actual projects (Health Insurance Cross-Sell Prediction, Smart Kitchen Renovation and Benevento Foods), my actual work experience at Cedar Creek Property Services and Seagal Laminate, and my actual contact information. This ensured that all the content on the final website was factually mine."
+  },
+  {
+    "objectID": "reflection.html#what-worked-better-with-more-pages-i-added",
+    "href": "reflection.html#what-worked-better-with-more-pages-i-added",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "What Worked Better With More Pages I Added",
+    "text": "What Worked Better With More Pages I Added\nAs the project grew from one page to 5, my use of the LLM really increased in efficiency and with purpose. In the early stages, I asked very broad questions such as “give me a site map.” By the time I was creating individual pages I was giving the LLM very specific instructions-free translation: “give me the CSS code only for the Skills page using red accents to match the lightbulb image I uploaded.” This change from the general to the specific prompting resulted in much better and immediately usable results, with a minimum of back and forth.\nI also learnt how to troubleshoot collaboratively. When I saw how my navbar showed as a vertical bullet list on GitHub Pages I took a screenshot and posted this to the LLM got a focused fixing of the CSS back in less than a second (GitHub, 2022). When the html form on my Contact page was appearing as source code it took the LLM to detect that Quarto needs a {=html} code block to display raw html (Posit, 2022) - something that would just not have occurred to me easily."
+  },
+  {
+    "objectID": "reflection.html#ensuring-authenticity-and-accuracy",
+    "href": "reflection.html#ensuring-authenticity-and-accuracy",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "Ensuring Authenticity and Accuracy",
+    "text": "Ensuring Authenticity and Accuracy\nEvery page was made to undergo a two-step verification process. First, I cross checked everything LLM generated text with my actual resume to make sure that no details were fabricated. For the purpose of the Health Insurance Cross-Sell Prediction project, I ensured that the different methods of Machine Learning were all made existing, such as Logistic Regression, Random Forest & XGBoost which were basically the tools that I have been using with accuracy in the scikit-learn library (Pedregosa et al., 2011). For the Smart Kitchen Renovation project, I have verified that the project management model described is aligned with the PMI standards (Project Management Institute, 2021). Second, I tested all the technical features (navigation links, the PDF download button, the contact form, and background images) in a live browser using quarto preview before uploading on GitHub Pages (GitHub, 2022). My live website at https://vasu9323.github.io/Vasu-Ramoliya-MBA-Portfolio/ is all verified, and personally accurate content."
+  },
+  {
+    "objectID": "reflection.html#conclusion",
+    "href": "reflection.html#conclusion",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis assignment has changed my perspective of LLMs from basic text creating robots to true development partners (Perplexity AI, 2026). The LLM helped me create a professional-looking and unique portfolio - with custom per-page backgrounds, and glass card layouts, and a working contact form - that I would never have been able to create on my own within this time-frame. Keeping human position at each and every step-point of the way made the end product to be mine in a truly authentic manner."
+  },
+  {
+    "objectID": "reflection.html#references",
+    "href": "reflection.html#references",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "References",
+    "text": "References\nGitHub. (2022). GitHub Pages [Web hosting service]. https://pages.github.com/\nPedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12, 2825–2830. http://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html\nPerplexity AI. (2026). Perplexity [Large language model]. https://www.perplexity.ai/\nPosit. (2022). Quarto: Open-source scientific and technical publishing system. https://quarto.org\nProject Management Institute. (2021). A guide to the project management body of knowledge (PMBOK guide) (7th ed.). PMI."
+  },
+  {
+    "objectID": "Appendix.html",
+    "href": "Appendix.html",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "",
+    "text": "Tool Used: Perplexity AI (2026), accessed March 4, 2026\nPrompt Submitted (verbatim):\n\n“I am an MBA student building a multi-page personal portfolio website using Quarto, hosted on GitHub Pages. Please create a complete site map for my portfolio website with at least five pages. For each page, provide: (1) the page title, (2) a brief description of its purpose, (3) a list of recommended sections or subsections, and (4) a short draft of introductory content I can use as a starting point. The website should reflect a professional MBA profile focused on business strategy, data analysis, and leadership.”"
+  },
+  {
+    "objectID": "Appendix.html#appendix-a-prompt-used-to-generate-site-map",
+    "href": "Appendix.html#appendix-a-prompt-used-to-generate-site-map",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "",
+    "text": "Tool Used: Perplexity AI (2026), accessed March 4, 2026\nPrompt Submitted (verbatim):\n\n“I am an MBA student building a multi-page personal portfolio website using Quarto, hosted on GitHub Pages. Please create a complete site map for my portfolio website with at least five pages. For each page, provide: (1) the page title, (2) a brief description of its purpose, (3) a list of recommended sections or subsections, and (4) a short draft of introductory content I can use as a starting point. The website should reflect a professional MBA profile focused on business strategy, data analysis, and leadership.”"
+  },
+  {
+    "objectID": "Appendix.html#appendix-b-llm-generated-output-unedited",
+    "href": "Appendix.html#appendix-b-llm-generated-output-unedited",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "Appendix B — LLM-Generated Output (Unedited)",
+    "text": "Appendix B — LLM-Generated Output (Unedited)\nThe following content was generated by Perplexity AI (2026) in response to the prompt above. It is reproduced here in its original, unedited form.\n\nSite Map\n\n\n\n\n\n\n\n\n\nPage #\nPage Title\nFile Name (.qmd)\nPurpose\n\n\n\n\n1\nHome / About\nindex.qmd\nIntroduce yourself, your brand, and your goals\n\n\n2\nResume / CV\nresume.qmd\nDisplay education, work experience, and skills\n\n\n3\nProjects & Case Studies\nprojects.qmd\nShowcase key MBA projects and analyses\n\n\n4\nSkills & Certifications\nskills.qmd\nList technical, analytical, and soft skills\n\n\n5\nContact\ncontact.qmd\nProvide contact form, email, and LinkedIn link\n\n\n6 (optional)\nLeadership & Community\nleadership.qmd\nHighlight volunteer work, clubs, and initiatives\n\n\n\n\n\nPage 1 — Home / About (index.qmd)\nPurpose: This is the landing page. It should immediately communicate who you are, what you stand for, and what visitors will find on the site.\nRecommended Sections:\n\nHero banner (name, title, tagline)\nShort bio (3–4 sentences)\nCall-to-action buttons (View Resume, See Projects)\nProfile photo\n\nLLM Draft Intro Content:\n\n“Welcome to my portfolio. I am an MBA candidate with a passion for business strategy, data analytics, and organizational leadership. Through this website, I share my academic projects, professional experience, and ongoing commitment to personal growth. I invite you to explore my work and connect with me.”\n\n\n\nPage 2 — Resume / CV (resume.qmd)\nPurpose: Present your full academic and professional background in a scannable, professional format.\nRecommended Sections:\n\nEducation (degrees, institutions, dates)\nWork Experience (roles, responsibilities, achievements)\nSkills summary\nLink to downloadable PDF resume\n\nLLM Draft Intro Content:\n\n“Below is an overview of my academic background and professional experience. I hold an MBA with concentrations in strategy and analytics. My career has spanned roles in business operations and financial analysis. A downloadable PDF version of my resume is available via the link below.”\n\n\n\nPage 3 — Projects & Case Studies (projects.qmd)\nPurpose: Demonstrate analytical and strategic thinking through documented projects.\nRecommended Sections:\n\nProject cards (title, summary, tools used)\nIndividual project pages with methodology and findings\nCharts or visualizations from the project\nLinks to GitHub repos or PDF reports\n\nLLM Draft Intro Content:\n\n“This section highlights selected projects completed during my MBA program. Each case study demonstrates my ability to apply analytical frameworks, interpret data, and propose strategic recommendations. Projects are drawn from coursework, competitions, and independent research.”\n\n\n\nPage 4 — Skills & Certifications (skills.qmd)\nPurpose: Give recruiters and collaborators a clear picture of your technical and professional competencies.\nRecommended Sections:\n\nTechnical skills (tools, software, programming languages)\nBusiness skills (strategy frameworks, financial modeling)\nCertifications (with issuing organizations and dates)\nProficiency rating bars or icons\n\nLLM Draft Intro Content:\n\n“My skill set bridges business strategy and data-driven decision-making. I am proficient in tools such as Excel, Python, and Quarto, and hold certifications in project management and business analytics. Below is a structured overview of my core competencies.”\n\n\n\nPage 5 — Contact (contact.qmd)\nPurpose: Make it easy for recruiters, collaborators, and classmates to reach you.\nRecommended Sections:\n\nProfessional email address\nLinkedIn profile link\nContact form (embedded or linked)\nLocation (city/region only)\n\nLLM Draft Intro Content:\n\n“I welcome connections from fellow professionals, recruiters, and academic peers. Whether you have a question about my work or a potential collaboration in mind, feel free to reach out through any of the channels below.”"
+  },
+  {
+    "objectID": "Appendix.html#appendix-c-student-annotations-revisions",
+    "href": "Appendix.html#appendix-c-student-annotations-revisions",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "Appendix C — Student Annotations & Revisions",
+    "text": "Appendix C — Student Annotations & Revisions\nThese are the annotations I made on the content generated by the LLM. All revisions have been based on my actual published website.\nAnnotation 1 — Home Page Revision (index.html)\nLLM Draft: The LLM provided a very general opening. It said something to the order of: “Welcome to my portfolio. I am an MBA student who enjoys business strategy.” No name, no details, no one’s personal.\nMy Revision: I altered the entire introduction section. I put my real name which is Vasu Ramoliya and wrote my real subtitle as “MBA Candidate | Business Analytics | Vancouver, BC.” In addition I also rewrote the bio paragraph to mention my university which is University Canada West and my focus area which is Business Analytics and strategic decision-making. I have added one more sentence regarding my career goal that I am looking for opportunities in Business Analysis or Data Analytics in Canadian market actively. Two buttons were added to the bottom. One is “Explore Projects” and it goes to projects page. Other one says “View Resume” and it goes to resume page. I have also added a background image on the hero section.\nWhy: The LLM draft was too general. It did not have my name or anything that was real. The assignment ask us to personalize the content and add real examples so I made all these changes to make it represent me properly.\nAnnotation 2 — Resume Page Revision (resume.html)\nLLM Draft: This is a Draft the LLM are suggesting a general layout of Resume with a placeholder name for jobs and schools. Nothing in it was real.\nMy Revision: I have replaced everything with the real background of me. For education I added my MBA from University Canada West in Vancouver, BC that I will be completing in April 2026 specializing in Business Analytics and Strategic Decision-Making. In addition, I have also added my Bachelor of Commerce from Saurashtra University, Rajkot, India with CGPA of 7.00. For work experience I added one real job (3 in total). First was Back Office Executive at Seagal Laminate India Based from August 2023 to August 2024. Second was Landscaping Associate in Cedar Creek Property Services, Vancouver from May 2024 to present. Third was the Dessert Specialist at Patel Dessert Shop based in India from February 2021 - September 2024. At the bottom I have also included a download for my resume PDF file.\nWhy: Assignment says that content must be authentic. So I deleted all of the fake information of the place-holder and inserted my real education and work history. The download button also complete the assignment requirement of adding visual and functional like downloadable resume.\nAnnotation 3 — Projects Page Revision (projects.html)\nLLM Draft: Only generic cards with names such as “Project 1” and “Project 2” were dispensed by the LLM. It talked about Python as a tool, but with no real content of the project.\nMy Revision: I have replaced the placeholders with three actual projects from my MBA program. Each project has four parts which are The Challenge, My Role, Methodology and The Results. First project is Health Insurance Cross-Sell Prediction which is about machine learning. I have created classification models of Logistic Regression, Random Forest, and XGBoost algorithm in Python using scikit-learn. I evaluated them by ROC-AUC & F1 Score. Second project is Smart Kitchen Renovation and Automation which is about project management. I was the project manager and I had to deliver the project in 8 weeks with budget of 15,000 dollars. I used ProjectLibre to make WBS, OBS, project schedule, risk register and cost baseline. Third project is Benevento Foods Quality and Operations Analysis which is about Business Strategy. I used SWOT Analysis and Porter’s Five Forces for finding out problems in their operations and gave recommendations.\nWhy: The LLM draft was completely empty of essence. I wrote all three projects from my real-life MBA Coursework. The four part structure for each project was also my own idea as I wanted it to be a more professional looking and reading structure.\nAnnotation 4 — Revision of Skills Page (skills.html)\nLLM Draft: The LLM came up with a simple list that includes tools such as Excel and Python. It also recommended to add proficiency rating bars with the use of HTML or CSS.\nMy Revision: I did a complete switch up of the layout. I grouped my skills into four separate tables with actual categories. First table is Data and Analytics which includes Python with Pandas, NumPy, scikit-learn and XGBoost, feature engineering and predictive modeling, data cleaning and model evaluation with ROC-AUC and F1, Tableau, and Advanced Excel. Second table is Business and Strategy which contains SWOT Analysis, Porter’s 5 Force Model, Market Analysis, Risk Assessment, and Strategic Planning. Third table is Tools and Project Management which includes ProjectLibre, WBS and OBS, PMI Principles, Scheduling, Cost Baselining and Risk Register. Fourth table is Languages which shows English language as Professional level, Hindi language as Fluent and Gujarati language as Native. I also added the star ratings to indicate level of proficiency with each skill.\nWhy: The LLM provided a homogenous and generic list. I organized everything into categories because that is the way my real skills are. I also deleted the progress bar idea from the LLM because it was not working out well for Quarto without the extra code to add some CSS. The star rating table was simpler and it work better.\nAnnotation 5 — Contact Page Revision (contact.html)\nLLM Draft: The LLM proposed email, LinkedIn and contact form. It also said that forms may not work on GitHub Pages due to the fact that it is a static site.\nMy Revision: I included all my real contact information. My location is located in Vancouver, British Columbia. My e-mail address is ramoliyavasu9323@gmail.com. My LinkedIn profile is also linked in the page. My phone number is also there. For the issue of contact form, I have not deleted the form as LLM suggested. Instead I used Formspree service which allow to make forms to function on static websites. I connected my form to Formspree so when someone submits the message it will go right to my email. The form solicit First Name, Last Name, Email, Phone, Message information from the visitor.\nWhy: The LLM said that the forms won’t work on GitHub Pages and maybe not using a form. But I did some research and find out Formspree which solve this problem. This way visitors can actually go send me message with no issue at all. All the contact information are also real which make the page authentic as the assignment require."
+  },
+  {
+    "objectID": "Appendix.html#references",
+    "href": "Appendix.html#references",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "References",
+    "text": "References\nFormspree. (2024). Formspree: Forms for static sites. https://formspree.io/\nPerplexity AI. (2026). Perplexity [Large language model]. https://www.perplexity.ai/\nPosit. (2022). Quarto: Open-source scientific and technical publishing system. https://quarto.org"
   },
   {
     "objectID": "contact.html#get-in-touch",
@@ -47,6 +124,13 @@
     "title": "Vasu Ramoliya - MBA Portfolio",
     "section": "📬 Get In Touch",
     "text": "📬 Get In Touch\nI am actively seeking opportunities in Business Analysis or Data Analytics within the Canadian market. Feel free to reach out anytime!\n\n📍 Location: Vancouver, British Columbia\n✉️ Email: ramoliyavasu9323@gmail.com\n🔗 LinkedIn: View My Profile\n📞 Phone: +1 (236) 662 8282"
+  },
+  {
+    "objectID": "projects.html#projects-case-studies",
+    "href": "projects.html#projects-case-studies",
+    "title": "Vasu Ramoliya - MBA Portfolio",
+    "section": "📊 Projects & Case Studies",
+    "text": "📊 Projects & Case Studies\nWelcome to my portfolio of academic projects. Each project below demonstrates how I apply data-driven analysis and structured management frameworks to solve real business problems."
   },
   {
     "objectID": "resume.html#education",
